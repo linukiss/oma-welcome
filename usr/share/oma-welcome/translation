@@ -32,6 +32,8 @@ titleupdate=$"Update of"
 descupdate=$"We must always keep the system updates on day to receive the latest enhancements, bug fixes and stability in the system, Whenever there is a new update, the system will warn you with a message in the notification area."
 titlexfdrake=$"Configure the drive video."
 descxfdrake=$"Set your video card, installed the latest drive by changing the resolution, enabling support 3D hardware acceleration, and multiple monitors."
+titleconfigprint=$"Configure your printer"
+descconfigprint=$"Add your printer HP, EPSON etc in OpenMandriva"
 titleconfigboot=$"Configure the system boot"
 descconfigboot=$"During installation OpenMandriva Lx 2014.0 ja detect all operating systems installed on your computer, but if you need to change the boot order of the system or repair grub2 manually or later add another operating system, you're using the tool."
 titleconfiglan=$"Configure the Network"
@@ -78,8 +80,13 @@ descwine=$"Wine is a program which allows running Microsoft Windows programs (in
 titleskype=$"Skype"
 descskype=$"This package does not contain any program files as the Skype license does not allow distribution. By installing this package you will download and install Skype from skype.com. You must accept the Skype EULA before using it. Please be patient, this is a 16 MB download and may take some time. Removing this package will uninstall Skype from your system."
 #translations of apps-office.sh.htm
-
-
+titlecalibre=$"Calibre"
+desccalibre=$"You can convert and manage your e-Book with Calibre."
+#translation of apps-gaming.sh.htm
+title0ad=$"0ad"
+desc0ad=$"0 A.D. is a free, open-source, cross-platform real-time strategy (RTS) game of ancient warfare."
+titlegames=$"Others games"
+descgames=$"Need suggestios of better games or other app."
 #translation of community.sh.htm
 titlecommunity=$"How coloborate with OpenMandriva Linux"
 desccommunity=$"So you really like OpenMandriva Lx and are eager to help? You can contribute in various ways by: "

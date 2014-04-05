@@ -2,7 +2,9 @@
 
 body {
 	margin-top: 3em;
-	background:url('images/bg.png') #e7e7e7;
+/* 	background:url('images/bg.png') #e7e7e7; */
+	background:url('images/background_blue.png') rgb(224,230,232) no-repeat;
+	min-height: 500px;
 	font-family: 'Droid Sans', sans-serif;
 	width:800px;
 	}
@@ -44,7 +46,7 @@ a:hover {
 			box-shadow: inset 0px 0px 20px #ccc;
 			overflow: hidden;
 			font-size: 12px;
-			min-height: 150px;
+			min-height: 50px;
 		}
 				
 		#item-list li img {
@@ -63,10 +65,14 @@ a:hover {
 			#item-list .title {
 				font-size: 16px;
 				color:#5555ff;
+				
+			}
+			#item-list .title img {
+			  
 			}
 			.titlePage{
 			    font-size: 16px;
-			    font-family: "GoodTimes", "Ubuntu", "Droid Sans", Sans;
+			    font-family: "GoodTimes","Sans";
 			    color: #003399;
 			    margin-bottom: 10px;
 			}
@@ -347,8 +353,7 @@ a:hover {
 	{
 		padding: 1em 1.8em 2em 1.7em;
 		text-align: center;
-		background:url('images/background_blue.png') rgb(224,230,232) no-repeat;
-		min-height: 500px;
+		
 	}
     .wrapper p {
 	    text-align: left;	      
