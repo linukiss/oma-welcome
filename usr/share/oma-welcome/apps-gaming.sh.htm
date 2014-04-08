@@ -1,5 +1,5 @@
 #!/bin/bash
-source translation
+source /usr/share/oma-welcome/translation
 #Translation
 cat << EOF
 <html>
@@ -43,7 +43,7 @@ cat << EOF
 		<h1 class="titlePage">$cabecalho03 $(lsb_release -d | cut -d":" -f2) $cabecalho04</h1>
 		<br/>
 		<div id='cssmenu'>
-		    <ul>
+		      <ul>
 			 <li><a href='apps-office.sh.htm'><span>$menuappsoffice</span></a></li> 
 			 <li><a href='apps-graphics.sh.htm'><span>$menuappsgraphics</span></a></li>
 			 <li><a href='apps-multimedia.sh.htm'><span>$menuappsmultimedia</span></a></li>
@@ -54,33 +54,29 @@ cat << EOF
 		</div>
 		<ul id="item-list">
 			<li>
-				<a class="title" href=./apps/install-steam.run><img src="images/steam.png" /></a>
-				<p><span><a class="title" href=./apps/install-steam.run>$titlesteam</a></span><br/></span></br>$descsteam</p>
+				<p><a class="title" href=./apps/install-0ad.run><img src="images/0ad.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-0ad.run>$title0ad</a></span><br/>$desc0ad</p>
 			</li>
 			<li>
-				<a href=./apps/install-0ad.run><img src="images/0ad.png" /></a>
-				<p><span><a class="title" href=./apps/install-0ad.run>$title0ad </a></span><br/>
-				$desc0ad.</p>
+				<p><a class="title" href=./apps/install-steam.run><img src="images/steam.png" class="alignleft"/></a>
+				<span><a class="title" href=./apps/install-steam.run>$titlesteam</a></span><br/></span></br>$descsteam</p>
+			</li>
+			
+			<li>
+				<p><a class="title" href="./apps/install-megaglest.run"><img src="images/megaglest.png" class="alignleft"/>
+				<span><a class="title" href="./apps/install-megaglest.run">$titlemegaglest </a></span><br/>$descmegaglest</p>
 			</li>
 			<li>
-				<a href=./apps/install-othersgames.run><img src="images/Chwido200.png" /></a>
-				<p><span><a class="title" href=./apps/install-gnucash.run>$titlegames </a></span><br/>
-				$descgames.</p>
+				<p><a class="title" href=./apps/install-wesnoth.run><img src="images/wesnoth.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-wesnoth.run>$titlewesnoth</a></span><br/>$descwesnoth</p>
 			</li>
 			<li>
-				<a href=./apps/install-othersgames.run><img src="images/Chwido200.png" /></a>
-				<p><span><a class="title" href=./apps/install-gnucash.run>$titlegames </a></span><br/>
-				$descgames.</p>
-			</li>
+				<p><a class="title" href=./apps/install-flightgear.run><img src="images/flightgear.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-flightgear.run>$titleflightgear</a></span><br/>$descflightgear</p>
+			</li>	
 			<li>
-				<a href=./apps/install-othersgames.run><img src="images/Chwido200.png" /></a>
-				<p><span><a class="title" href=./apps/install-gnucash.run>$titlegames </a></span><br/>
-				$descgames.</p>
-			</li>
-			<li>
-				<a href=./apps/install-othersgames.run><img src="images/Chwido200.png" /></a>
-				<p><span><a class="title" href=./apps/install-gnucash.run>$titlegames </a></span><br/>
-				$descgames.</p>
+				<p><a class="title" href=./apps/install-torcs.run><img src="images/torcs.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-torcs.run>$titletorcs</a></span><br/>$desctorcs</p>
 			</li>
 		</ul>
 	</div> 
