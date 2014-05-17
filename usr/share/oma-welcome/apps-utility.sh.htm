@@ -16,9 +16,6 @@ cat << EOF
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<script src="js/jquery.min.js"></script>
-		<script src="js/config.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="html5.js"></script>
 		<link rel="stylesheet" href="css/style.css" />
 		
 	</head>
@@ -40,13 +37,14 @@ cat << EOF
 <!-- Home -->
 	<div class="wrapper">			
 		<div id="container">	
-		<h1 class="titlePage">$cabecalho03 $(lsb_release -d | cut -d":" -f2) $cabecalho04</h1>
-		<br/>
+		<p class="titlePage">$cabecalho03 $(lsb_release -d | cut -d":" -f2) $cabecalho04</p>
 		<div id='cssmenu'>
 		    <ul>
 			 <li><a href='apps-office.sh.htm'><span>$menuappsoffice</span></a></li> 
 			 <li><a href='apps-graphics.sh.htm'><span>$menuappsgraphics</span></a></li>
+			 <li><a href='apps-internet.sh.htm'><span>$menuappsinternet</span></a></li>
 			 <li><a href='apps-multimedia.sh.htm'><span>$menuappsmultimedia</span></a></li>
+			 <li><a href='apps-development.sh.htm'><span>$menuappsdevelopment</span></a></li>
 			 <li class='active'><a href='apps-utility.sh.htm'><span>$menuappsutility</span></a></li>
 			 <li><a href='apps-gaming.sh.htm'><span>$menuappsgaming</span></a></li>
 		    </ul>
@@ -59,23 +57,35 @@ cat << EOF
 			</li>
 			<li>
 				<a class="title" href=./apps/install-adobe-flash.run><img src="images/flash.png" class="alignleft"/>
-				<span><a class="title" href=./apps/install-adobe-flash.run>$titleflash</br></a></span>$descflash</p>
+				<span><a class="title" href=./apps/install-adobe-flash.run>$titleflash</a></span><br/>$descflash</p>
 			</li>
 			<li>
 				<p><a class="title" href=./apps/install-kvpnc.run><img src="images/kvpnc.png" class="alignleft"/></a>
-				<span><a class="title" href=./apps/install-steam.run>$titlekvpnc</a></span><br/></span></br>$descskvpnc</p>
+				<span><a class="title" href=./apps/install-kvpnc.run>$titlekvpnc</a></span><br/></span></br>$descskvpnc</p>
+			</li>
+			<li>
+				<p><a class="title" href=./apps/install-filezilla.run><img src="images/filezilla.png" class="alignleft"/></a>
+				<span><a class="title" href=./apps/install-filezilla.run>$titlefilezilla</a></span><br/></span></br>$descfilezilla</p>
+			</li>
+			<li>
+				<p><a class="title" href=./apps/install-virtualbox.run><img src="images/virtualbox.png" class="alignleft"/></a>
+				<span><a class="title" href=./apps/install-virtualbox.run>$titlevirtualbox</a></span><br/></span></br>$descvirtualbox</p>
+			</li>
+			<li>
+				<p><a class="title" href=./apps/install-grsync.run><img src="images/grsync.png" class="alignleft"/></a>
+				<span><a class="title" href=./apps/install-grsync.run>$titlegrsync</a></span><br/></span></br>$descgrsync</p>
 			</li>
 			<li>
 				<a class="title" href=./apps/install-wine.run><img src="/usr/share/icons/oxygen/128x128/apps/wine.png" class="alignleft"/>
 				<span><a class="title" href=./apps/install-wine.run>$titlewine</a></span><br/>$descwine</br></p>
 			</li>
 			<li>
-				<a class="title" href=./apps/install-skype.run><img src="images/skype.png" class="alignleft"/>
-				<span><a class="title" href=./apps/install-skype.run>$titleskype</a></span><br/>$descskype</p>
+				<a class="title" href="./apps/install-unrar.run"><img src="images/unrar.png" class="alignleft"/>
+				<span><a class="title" href="./apps/install-unrar.run">$titleunrar </a></span><br/>$descunrar</p>
 			</li>	
 			<li>
 				<a class="title" href="./apps/abrir-rpmdrake.run"><img src="images/rpmdrake.png" class="alignleft"/>
-				<span><a class="title" href="./apps/abrir-rpmdrake.run">$titlerpmdrake</a></span>$descrpmdrake</p>
+				<span><a class="title" href="./apps/abrir-rpmdrake.run">$titlerpmdrake</a></span><br/>$descrpmdrake</p>
 			</li>
 		</ul>
 	</div> 

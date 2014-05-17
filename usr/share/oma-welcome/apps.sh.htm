@@ -1,5 +1,5 @@
 #!/bin/bash
-source translation
+source /usr/share/oma-welcome/translation
 #Translation
 cat << EOF
 <html>
@@ -16,9 +16,6 @@ cat << EOF
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<script src="js/jquery.min.js"></script>
-		<script src="js/config.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="html5.js"></script>
 		<link rel="stylesheet" href="css/style.css" />
 		
 	</head>
@@ -54,34 +51,19 @@ cat << EOF
 		</div>
 		<ul id="item-list">
 			<li>
-				<a href=./apps/install-calibre.run><img src="images/calibre.png" /></a>
-				<p><span><a class="title" href=./apps/install-codecs.run>Calibre </a></span><br/>
+				<p><a href=./apps/install-calibre.run><img src="images/calibre.png" class="alignleft"/></a>
+				<span><a class="title" href=./apps/install-calibre.run>Calibre </a></span><br/>
 				You can convert and manage your e-Book with Calibre.</p>
 			</li>
 			<li>
-				<a href=./apps/install-dia.run><img src="images/dia.png" /></a>
-				<p><span><a class="title" href=./apps/install-dia.run>Dia </a></span><br/>
+				<p><a href=./apps/install-dia.run><img src="images/dia.png" class="alignleft"/></a>
+				<span><a class="title" href=./apps/install-dia.run>Dia </a></span><br/>
 				Easy to create Diagram documents with Dia.</p>
 			</li>
 			<li>
-				<a href=./apps/install-gnucash.run><img src="images/gnucash.png" /></a>
-				<p><span><a class="title" href=./apps/install-gnucash.run>GNUCash </a></span><br/>
+				<p><a href=./apps/install-gnucash.run><img src="images/gnucash.png" class="alignleft"/></a>
+				<span><a class="title" href=./apps/install-gnucash.run>GNUCash </a></span><br/>
 				Manage and tracks your finances with GNUCash.</p>
-			</li>
-			<li>
-				<a href=./apps/install-monosim-qt.run><img src="images/monosim-qt.png" /></a>
-				<p><span><a class="title" href=./apps/install-monosim-qt.run>MonoSIM-Qt </a></span><br/>
-				Manage your SIM Card Contacts with MonoSIM Qt.</p>
-			</li>
-			<li>
-				<a href=./apps/install-semantik.run><img src="images/semantik.png" /></a>
-				<p><span><a class="title" href=./apps/install-semantik.run>Semantik </a></span><br/>
-				Mindmapping and brainstorming tools.</p>
-			</li>
-			<li>
-				<a href=./apps/install-kraft.run><img src="images/kraft.png" /></a>
-				<p><span><a class="title" href=./apps/install-kraft.run>Kraft </a></span><br/>
-				Manages your Office Documents with Kraft</p>
 			</li>
 		</ul>
 	</div> 

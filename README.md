@@ -1,13 +1,12 @@
-oma-welcome
+om-welcome
 ===========
 
-This is the om-welcome - Welcome OpenMandriva
+version: 1.0.2
+
+This is the om-welcome - Welcome to OpenMandriva
 
 designed to introduce new users to the OpenMandriva distro and
-also integrate common tasks for post-installation distro
-
-Text, images and applications are not official this app will be added as soon as the
-team workshop OpenMandriva Association amend and approve.
+also integrate common tasks for post-installation distro.
 
 requires the following dependencies:
 
@@ -30,6 +29,11 @@ urpmi python-qt4-webkit
 python setup.py install
 ``` 
 
+or just use urpmi:
+```sh
+urpmi python-webpy
+```
+
 ##### Directory Structures
 your files are:
 ```
@@ -50,14 +54,14 @@ bbv/
 
 if you package it separately om-welcome requires changes to the running script.
 
-##### Running OMA-Welcome
-you can run the oma-welcome for debugging, with following command:
+##### Running OM-Welcome
+you can run the om-welcome for debugging, with following command:
 ```sh
 python bigbashview.py -s 960x600 -c index.sh.htm
 ```
 
 #####translations
-* inside the folder ```usr/share/oma-welcome/ ```
+* inside the folder ```usr/share/om-welcome/ ```
 * there is a file called translation, all texts om-welcome are it is from it that will 
 * generate the translation files
 * format it is as follows
@@ -65,10 +69,10 @@ python bigbashview.py -s 960x600 -c index.sh.htm
 
 with the command
 ```sh
-bash --dump-po-strings translation > oma-welcome.pot
+bash --dump-po-strings translation > om-welcome.pot
 ```
 
-oma-welcome.pot is the translation file.
+om-welcome.pot is the translation file.
 
 the bigbashview uses html, css and js to create the layout, if you want to make any changes or improvements
 just edit the files with the format. sh.htm, and style.css that is inside the css folder.
@@ -83,11 +87,3 @@ example:
 ```
      $(lsb_release -d | cut -d":" -f2) #shows the name of the Linux distribution
 ```      
- 
-#####Some known issues
- 
-* Asking password every transaction as root
-* if run as root (su -c "./om-welcome") the konversation not run 100%
-* kdialog messages can not translate them
-* checkbox still does not work, under development
-* the icon om-welcome.desktop was created to run om-welcome in ~/.config/autostart/ or other local, it exec to /usr/bin/om-welcome

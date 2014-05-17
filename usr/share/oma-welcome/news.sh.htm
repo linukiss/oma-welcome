@@ -16,23 +16,18 @@ cat << EOF
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<script src="js/jquery.min.js"></script>
-		<script src="js/config.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/html5shiv.js"></script>
-		<script type="text/javascript" src="js/FeedEk.js"></script>
-		<link href="css/FeedEk.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="css/style.css" />
-		<script src="js/moment-with-langs.min.js"></script>
+		<script type="text/javascript" src="js/jquery.sliderkit.1.9.2.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/sliderkit-core.css" media="screen, projection" />
+		<link rel="stylesheet" type="text/css" href="css/sliderkit-demos.css" media="screen, projection" />
 		<script type="text/javascript">
-        jQuery(document).ready(function () {
-            jQuery('#divRssBlog').FeedEk({
-                FeedUrl: 'http://blog.openmandriva.org/en/feed/',
-                MaxCount: 5,
-                DescCharacterLimit: 200
-            });
-            
-		});
-
+			jQuery(window).load(function(){
+				jQuery(".newslider-vertical").sliderkit({
+					verticalnav:true,
+					navitemshover:true,
+					circular:true
+				});
+			});	
 		</script>
 	</head>
 <body>
@@ -50,12 +45,96 @@ cat << EOF
 	</nav>
 <!-- Home -->
 	<div class="wrapper">
-		 <article class="articles">
-			<h1 class="titlePage">News</h1>
-			<div id="divRssBlog"></div>
+		<article class="articles">
+			<h1 class="titlePage">$newfeature</h1>
+			<p>$releasepreambule</p>
+			<br/>
 		 </article>
+		<!-- Start newslider-vertical -->
+		<div class="sliderkit newslider-vertical">
+			<div class="sliderkit-nav">
+				<div class="sliderkit-nav-clip">
+					<ul>
+						<li><a>Kernel 3.13.11 NRJ-QL</a></li>
+						<li><a>KDE 4.12.4</a></li>
+						<li><a>LibreOffice 4.2.3</a></li>
+						<li><a>$controlcenter</a></li>
+						<li><a>EFI Boot</a></li>
+						<li><a>$freshpackages</a></li>
+						<li><a>ABF</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="sliderkit-panels">
+				<div class="sliderkit-panel">
+					<div class="sliderkit-news">
+						<div class="logo">
+							<img src="images/tux.png"/>
+						 </div>
+						<h3 class="titlePage">Kernel 3.13.11 NRJ-QL</h3>
+						<p>$kerneldesc</p>
+					</div>
+				</div>
+				<div class="sliderkit-panel">
+					<div class="sliderkit-news">
+						<h3 class="titlePage">KDE 4.12.4</h3>
+						<div class="logo">
+							<img src="images/kde4.png"/>
+						 </div>
+						<p>$kdedesc</p>
+					</div>
+				</div>
+				<div class="sliderkit-panel">
+					<div class="sliderkit-news">
+						<h3 class="titlePage">LibreOffice 4.2.3</h3>
+						<div class="logo">
+							<img src="images/libreoffice.png"/>
+						 </div>
+						<p>$libreofficedesc</p>
+					</div>
+				</div>
+				<div class="sliderkit-panel">
+					<div class="sliderkit-news">
+						<h3 class="titlePage">OpenMandriva Control Center</h3>
+						<div class="logo">
+							<img src="images/drakconf.png"/>
+						 </div>
+						<p>
+						$drakconfdesc
+						</p>
+					</div>
+				</div>
+				<div class="sliderkit-panel">
+					<div class="sliderkit-news">
+						<h3 class="titlePage">EFI Boot</h3>
+						<p>
+						$efibootdesc
+						</p>
+					</div>
+				</div>
+				<div class="sliderkit-panel">
+					<div class="sliderkit-news">
+						<h3 class="titlePage">Fresh Packages</h3>
+						<p>
+						$freshpackagedesc
+						</p>
+					</div>
+				</div>
+				<div class="sliderkit-panel">
+					<div class="sliderkit-news">
+						<h3 class="titlePage">ABF (Automated Build Farm)</h3>
+						<div class="logo">
+								<img src="images/abf.png"/>
+						 </div>
+						<p>
+						$abfdesc
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	
 	
 	<div id="rodape">
 	<a href="conf.sh.htm" class="button">$next</a>
@@ -63,3 +142,4 @@ cat << EOF
 </body>
 	
 </html>
+EOF

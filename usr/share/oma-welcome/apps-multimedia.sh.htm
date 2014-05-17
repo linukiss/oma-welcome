@@ -16,9 +16,6 @@ cat << EOF
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<script src="js/jquery.min.js"></script>
-		<script src="js/config.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="html5.js"></script>
 		<link rel="stylesheet" href="css/style.css" />
 		
 	</head>
@@ -40,13 +37,14 @@ cat << EOF
 <!-- Home -->
 	<div class="wrapper">			
 		<div id="container">	
-		<h1 class="titlePage">$cabecalho03 $(lsb_release -d | cut -d":" -f2) $cabecalho04</h1>
-		<br/>
+		<p class="titlePage">$cabecalho03 $(lsb_release -d | cut -d":" -f2) $cabecalho04</p>
 		<div id='cssmenu'>
 		    <ul>
 			 <li><a href='apps-office.sh.htm'><span>$menuappsoffice</span></a></li> 
 			 <li><a href='apps-graphics.sh.htm'><span>$menuappsgraphics</span></a></li>
-			 <li class='active'><a href='apps-multimedia.sh.htm'><span>$menuappsmultimedia</span></a></li>
+			 <li><a href='apps-internet.sh.htm'><span>$menuappsinternet</span></a></li>
+			 <li  class='active'><a href='apps-multimedia.sh.htm'><span>$menuappsmultimedia</span></a></li>
+			 <li><a href='apps-development.sh.htm'><span>$menuappsdevelopment</span></a></li>
 			 <li><a href='apps-utility.sh.htm'><span>$menuappsutility</span></a></li>
 			 <li><a href='apps-gaming.sh.htm'><span>$menuappsgaming</span></a></li>
 		    </ul>
@@ -56,6 +54,22 @@ cat << EOF
 			<li>
 				<p><a href=./apps/install-codecs.run><img src="images/codec.png" class="alignleft" />
 				<span><a class="title" href=./apps/install-codecs.run>$titlecodecs</br></a></span>$desccodecs</p>
+			</li>
+			<li>
+				<a class="title" href=./apps/install-smplayer.run><img src="images/smplayer.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-smplayer.run>$titlesmplayer</br></a></span>$descsmplayer</p>
+			</li>
+			<li>
+				<a class="title" href=./apps/install-romp.run><img src="images/romp.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-romp.run>$titleromp</br></a></span>$descromp</p>
+			</li>
+			<li>
+				<a class="title" href=./apps/install-miro.run><img src="images/miro.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-miro.run>$titlemiro</br></a></span>$descmiro</p>
+			</li>
+			<li>
+				<a class="title" href=./apps/install-bino.run><img src="images/bino.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-bino.run>$titlebino</br></a></span>$descbino</p>
 			</li>
 			<li>
 				<a class="title" href=./apps/install-audacity.run><img src="/usr/share/icons/rosa/apps/72/audacity.svg" class="alignleft"/>
@@ -71,12 +85,8 @@ cat << EOF
 				<span><a class="title" href="./apps/install-devede.run">$titledevede</br></a></span>$descdevede</p>
 			</li>
 			<li>
-				<a class="title" href=./apps/install-xvidcap.run><img src="images/xvidcap.png" class="alignleft"/>
-				<span><a class="title" href=./apps/install-xvidcap.run>$titlexvidcap</br></a></span>$descxvidcap</br></p>
-			</li>
-			<li>
-				<a class="title" href="./apps/abrir-rpmdrake.run"><img src="images/rpmdrake.png" class="alignleft"/>
-				<span><a class="title" href="./apps/abrir-rpmdrake.run">$titlerpmdrake</br></a></span>$descrpmdrake</p>
+				<p><a class="title" href="./apps/abrir-rpmdrake.run"><img src="images/rpmdrake.png" class="alignleft"/>
+				<span><a class="title" href="./apps/abrir-rpmdrake.run">$titlerpmdrake</a></span><br/>$descrpmdrake.</p>
 			</li>
 		</ul>
 	</div> 

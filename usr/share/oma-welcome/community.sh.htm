@@ -16,9 +16,6 @@ cat << EOF
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<script src="js/jquery.min.js"></script>
-		<script src="js/config.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="html5.js"></script>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 <body>
@@ -39,6 +36,11 @@ cat << EOF
 		<div id="container">
 				<p class="titlePage"> $desccommunity </p>
 				<ul id="item-list">
+					<li>
+						<a href=./apps/open-forum.run><img src="images/book.png" class="alignleft"/></a>
+						<span><a class="title" href=./apps/open-manual.run>$titlemanual<br/> </a></span>
+						$descmanual<br/></p>
+					</li>
 					<li>
 						<a href=./apps/open-forum.run><img src="images/knewsticker.png" class="alignleft"/></a>
 						<span><a class="title" href=./apps/open-forum.run>$titleforum<br/> </a></span>
@@ -83,21 +85,8 @@ cat << EOF
 					
 				</ul>
 		</div> 
-	</div> 	
-	<script type="text/javascript">
-// From: http://www.webdeveloper.com/forum/showthread.php?t=242793
-
-function OpenWindow(info) {
-  window.open(info,'WinName','height=400,width=600,resizable=yes,scrollbars=yes');
-}
-</script>	
+	</div>	
 		
-		<div class="nostartauto">
-		<span>
-<!-- 		<form action="" method="post"> -->
-		 <input type="checkbox" value="./apps/nostart.run" name="checket" onClick="if (this.checked) { window.location = this.value; }"/>
-		 $nostarwithoma </spam>
-		<div>
 		<div id="rodape">
 		<a href="execute close$" class="button">$endapp</a>
 		</div>

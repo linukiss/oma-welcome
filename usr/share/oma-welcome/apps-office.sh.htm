@@ -16,9 +16,6 @@ cat << EOF
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<script src="js/jquery.min.js"></script>
-		<script src="js/config.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="html5.js"></script>
 		<link rel="stylesheet" href="css/style.css" />
 		
 	</head>
@@ -40,13 +37,14 @@ cat << EOF
 <!-- Home -->
 	<div class="wrapper">			
 		<div id="container">	
-		<h1 class="titlePage">$cabecalho03 $(lsb_release -d | cut -d":" -f2) $cabecalho04</h1>
-		<br/>
+		<p class="titlePage">$cabecalho03 $(lsb_release -d | cut -d":" -f2) $cabecalho04</p>
 		<div id='cssmenu'>
 		    <ul>
 			 <li class='active'><a href='apps-office.sh.htm'><span>$menuappsoffice</span></a></li> 
 			 <li><a href='apps-graphics.sh.htm'><span>$menuappsgraphics</span></a></li>
+			 <li><a href='apps-internet.sh.htm'><span>$menuappsinternet</span></a></li>
 			 <li><a href='apps-multimedia.sh.htm'><span>$menuappsmultimedia</span></a></li>
+			 <li><a href='apps-development.sh.htm'><span>$menuappsdevelopment</span></a></li>
 			 <li><a href='apps-utility.sh.htm'><span>$menuappsutility</span></a></li>
 			 <li><a href='apps-gaming.sh.htm'><span>$menuappsgaming</span></a></li>
 		    </ul>
@@ -64,14 +62,9 @@ cat << EOF
 				$descdia.</p>
 			</li>
 			<li>
-				<a href=./apps/install-gnucash.run><img src="images/gnucash.png" class="alignleft"/>
-				<span><a class="title" href=./apps/install-gnucash.run>$titlegnucash </a></span><br/>
-				$descgnucash</p>
-			</li>
-			
-			<li>
-				<a class="title" href="./apps/install-unrar.run"><img src="images/unrar.png" class="alignleft"/>
-				<span><a class="title" href="./apps/install-unrar.run">$titleunrar </a></span><br/>$descunrar</p>
+				<a href=./apps/install-calligra.run><img src="images/calligra.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-calligra.run>$titlecalligra </a></span><br/>
+				$desccalligra</p>
 			</li>
 			<li>
 				<a href=./apps/install-semantik.run><img src="images/semantik.png" class="alignleft"/>
@@ -82,6 +75,25 @@ cat << EOF
 				<a href=./apps/install-kraft.run><img src="images/kraft.png" class="alignleft"/>
 				<span><a class="title" href=./apps/install-kraft.run>$titlekraft </a></span><br/>
 				$desckraft</p>
+			</li>
+			<li>
+				<a href=./apps/install-zim.run><img src="images/zim.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-zim.run>$titlezim </a></span><br/>
+				$desczim</p>
+			</li>
+			<li>
+				<a href=./apps/install-poedit.run><img src="images/poedit.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-poedit.run>$titlepoedit </a></span><br/>
+				$descpoedit</p>
+			</li>
+			<li>
+				<a href=./apps/install-homebank.run><img src="images/homebank.png" class="alignleft"/>
+				<span><a class="title" href=./apps/install-homebank.run>$titlehomebank </a></span><br/>
+				$deschomebank</p>
+			</li>
+			<li>
+				<a class="title" href="./apps/abrir-rpmdrake.run"><img src="images/rpmdrake.png" class="alignleft"/>
+				<span><a class="title" href="./apps/abrir-rpmdrake.run">$titlerpmdrake</a></span><br/>$descrpmdrake</p>
 			</li>
 		</ul>
 	</div> 
